@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="app.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+    <title>Document</title>
+</head>
+<body>
+    <div id="topnav">
+        <div class="topbar">
+            <div class="container">
+                <div id="logo">
+                    <a href="/">
+                        <img id="hd" src="image/card1.jpg" alt="loi">
+                    </a>
+                </div>
+                <div class="menu">
+                    <ul id="dn">
+                        <li id="lidangnhap">
+                            <a href="login.html"><button id="dangnhap">ĐĂNG NHẬP</button> </a> 
+                        </li>
+                        <li id="lidangky">
+                           <a id="adangky" href="signup.html" > <button id="dangky">ĐĂNG KÝ</button> </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="container">
+                <div id="form">
+                    <ul class="form-menu">
+                        <li class="w3-xlarge">
+                            <i class="fa fa-home"></i>
+                        </li>
+                        <li class="last">
+                            <a id="trangchu" href="/">TRANG CHỦ</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="body">
+        <div class="container mid_content">
+        <div class="khac">
+        <h3 style="text-align: center;">Thông tin đăng ký </h3>
+        <!-- <label>Họ tên</label> <input id="Name" type="text" required ="required" max="50"> -->
+        <!-- <label>Tên tài khoản </label> <input id="username" type="text" required ="required" max="50">
+        <label>Số điện thoại </label> <input id="phone" type="number" required ="required" max="10">
+        <label>Địa chỉ email</label> <input id="email" type="text" required ="required" max="50"> <p id='result'></p>
+        <label>Mật khẩu</label> <input id="password" type="password" required ="required" max="50">
+        <label>Nhập lại mật khẩu</label> <input id="repassword" type="password" required ="required" max="50"> -->
+        <!-- <label>Mật khẩu cấp 2</label> <input type="text" required ="required" max="50"> -->
+        <!-- <button id="button" type="submit">Đăng ký tài khoản</button> -->
+        <form method="post" action="" id="signupform">
+    <table  cellpadding="10" >
+        <tr>
+            <td>Tên đăng nhập: </td>
+            <td>
+                <input type="text" id="username" name="username" value=""/>
+                <span id="username_error" style="color: red;"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>Mật khẩu: </td>
+            <td>
+                <input type="password" id="password" name="password" value=""/>
+                <span id="password_error" style="color: red "></span>
+            </td>
+        </tr>
+        <tr>
+            <td>Nhập lại mật khẩu: </td>
+            <td>
+                <input type="password" id="repassword" name="repassword" value=""/>
+                <span id="repassword_error" style="color: red "></span>
+            </td>
+        </tr>
+        <tr>
+            <td>Phone: </td>
+            <td>
+                <input type="text" id="phone" name="phone" value=""/>
+                <span id="phone_error" style="color: red; " ></span>
+            </td>
+        </tr>
+        <tr>
+            <td>Email </td>
+            <td>
+                <input type="text" id="email" name="email" value=""/>
+                <span id="email_error" style="color: red "></span>
+            </td>
+        </tr>
+ 
+        <tr>
+            <td>Địa chỉ </td>
+            <td>
+                <input type="text" id="address" name="address" value=""/>
+                <span id="address_error"></span>
+            </td>
+        </tr>
+ 
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" id="btn" name="btn" value="Đăng ký"/>
+            </td>
+        </tr>
+    </table>
+</form>
+    </div>
+          </div>
+                 </div>
+    <div class="end">
+        <div class="container">
+            <div class="row">
+                <div class="info">
+                    <h4>Thông tin liên hệ </h4>
+                    <ul class="list-addres">
+                        <li>
+                            <i class="fa fa-map"></i> Địa Chỉ: Ninh Khánh - Ninh Bình
+                        </li>
+                        <li>
+                            <i class="fa fa-phone-square"></i> Điện thoại: 0383363338
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="fouter">
+                <div class="container">
+                    <div class="row bottom1">
+                        <div class="col-sm-4">
+                            <i class="fa fa-smile-o"></i> Đổi thẻ cào nhanh chóng, Tiện lợi
+                        </div>
+                        <div class="col-sm-4">
+                            <i class="fa fa-usd"></i> Thanh toán an toàn, tiết kiệm
+                        </div>
+                        <div class="col-sm-4">
+                            <i class="fa fa-lock"></i> Bảo mật SSL
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="signup.js"></script>
+
+</body>
+
+</html>

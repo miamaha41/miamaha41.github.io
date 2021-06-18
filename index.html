@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRANG CHỦ | Đổi Thẻ Cào Thành Tiền</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./app.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  </head>
+
+  <body>
+    <div id="topnav">
+      <div class="topbar">
+        <div class="container">
+          <div id="logo">
+            <a href="/">
+              <img id="hd" src="image/card1.jpg" alt="loi" />
+            </a>
+          </div>
+          <div class="menu">
+            <ul id="dn">
+              <li id="lidangnhap">
+                <a href="login.html" ><button id="dangnhap">ĐĂNG NHẬP</button>
+                </a>
+              </li>
+              <li id="lidangky">
+                <a id="adangky" href="signup.html">
+                  <button id="dangky">ĐĂNG KÝ</button>
+                </a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="navbar">
+        <div class="container">
+          <div id="form">
+            <ul class="form-menu">
+              <li class="w3-xlarge">
+                <i class="fa fa-home"></i>
+              </li>
+              <li class="last">
+                <a id="trangchu" href="/">TRANG CHỦ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="body">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="page-title-box"></div>
+          </div>
+        </div>
+        <div class="container mid_content">
+          <div class="container" id="content">
+            <div class="row">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="panel">
+                    <div class="panel-body">
+                      <marquee>
+                        <p>
+                          <span style="color: #f60">
+                            <strong>Hiện Tại Wed Auto Zing - garena 24/7 Rút Tiền về
+                              ATm từ 07h -23h</strong></span>
+                        </p>
+                      </marquee>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row" id="main">
+                <div class="classdt">
+                  <div id="doiThe">
+                    <div class="panel-heading" style="background-color: #188ae2">
+                      <h3 class="panel-title">ĐỔI THẺ CÀO THÀNH TIỀN MẶT</h3>
+                    </div>
+                    <div class="panel-body">
+                      <h5>Loại Thẻ Cào</h5>
+                      <form method="post" action="" id="cardform">
+                        <input id="loaiThe" type="text" required />
+
+                        <h5>Mã Thẻ Cào</h5>
+
+                        <input id="maThe" type="text" required />
+
+                        <h5>Serial</h5>
+
+                        <input id="seriThe" type="text" required />
+
+                        <h5>Mệnh Giá</h5>
+
+                        <!-- <button id="10" type="submit">10.000</button>
+                        <button id="20" type="submit">20.000</button>
+                        <button id="50"  type="submit">50.000</button>
+                        <button id="100" type="submit">100.000</button>
+                        <button id="200" type="submit">200.000</button>
+                        <button id="500" type="submit">500.000</button> -->
+                        <label for="1">10.000đ</label> 
+                        <input type="checkbox" id="1" onclick="selectOnlyThis(this.id)"value="10.000đ">
+                        <label for="2" >20.000đ</label> 
+                        <input type="checkbox" id="2" onclick="selectOnlyThis(this.id)" value="20.000đ">
+                        <label for="3" >50.000đ</label> 
+                        <input type="checkbox" id="3" onclick="selectOnlyThis(this.id)" value="50.000đ">
+                        <label for="4" >100.000đ</label> 
+                        <input type="checkbox" id="4" onclick="selectOnlyThis(this.id)" value="100.000đ">
+                        <label for="5" >200.000đ</label> 
+                        <input type="checkbox" id="5" onclick="selectOnlyThis(this.id)" value="200.000đ">
+                        <label for="6">500.000đ</label> 
+                        <input type="checkbox" id="6" onclick="selectOnlyThis(this.id)" value="500.000đ"><br>
+                        <h8>Lưu ý: Quý khách vui lòng chọn đúng mệnh giá thẻ cào
+                          để nhận được tiền thu mua thẻ từ web . Chúng tôi sẽ
+                          không chịu trách nhiệm nếu quý vị chọn sai mệnh giá
+                          thẻ.</h8><br>
+
+                        <input type="submit" value="Thực Hiện">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="classlt">
+                  <div id="loaithe">
+                    <div class="panel-heading">
+                      <h2 class="panel-title">Bảng giá chiết khấu đổi thẻ</h2>
+                    </div>
+                    <table class="tb">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Loại thẻ</th>
+                          <th>Biểu phí trên 50k</th>
+                          <th>Biểu phí dưới 50k</th>
+                          <th>Trạng thái</th>
+                          <th>Thời gian xử lý</th>
+                        </tr>
+                      </thead>
+                      <tbody class="tablebd">
+                        <tr>
+                          <td>1</td>
+
+                          <td>Viettel</td>
+                          <td style="text-align: center">32%</td>
+                          <td style="text-align: center">40%</td>
+                          <td style="text-align: center">
+                            <span style="color: green; font-weight: bold">Hoạt động</span>
+                          </td>
+                          <td>Chậm</td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>Vinaphone</td>
+                          <td style="text-align: center">32%</td>
+                          <td style="text-align: center">40%</td>
+                          <td style="text-align: center">
+                            <span style="color: green; font-weight: bold" >Hoạt động</span>
+                          </td>
+                          <td>Chậm</td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>Mobifone</td>
+                          <td style="text-align: center">35%</td>
+                          <td style="text-align: center">40%</td>
+                          <td style="text-align: center">
+                            <span style="color: green; font-weight: bold">Hoạt động</span>
+                          </td>
+                          <td>Chậm</td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>Zing</td>
+                          <td style="text-align: center">20%</td>
+                          <td style="text-align: center">20%</td>
+                          <td style="text-align: center">
+                            <span style="color: green; font-weight: bold">Hoạt động</span>
+                          </td>
+                          <td>1 Giây Auto 24/24h</td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>Vcoin</td>
+                          <td style="text-align: center">30%</td>
+                          <td style="text-align: center">30%</td>
+                          <td style="text-align: center">
+                            <span style="color: green; font-weight: bold">Hoạt động</span>
+                          </td>
+                          <td>1 Giây Auto 24/24h</td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>Gate</td>
+                          <td style="text-align: center">30%</td>
+                          <td style="text-align: center">30%</td>
+                          <td style="text-align: center">
+                            <span style="color: green; font-weight: bold">Hoạt động</span>
+                          </td>
+                          <td>1 Giây Auto 24/24h</td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>Garena</td>
+                          <td style="text-align: center">37%</td>
+                          <td style="text-align: center">37%</td>
+                          <td style="text-align: center">
+                            <span style="color: green; font-weight: bold">Hoạt động</span>
+                          </td>
+                          <td>Chậm</td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>Oncash</td>
+                          <td style="text-align: center">40%</td>
+                          <td style="text-align: center">40%</td>
+
+                          <td style="text-align: center">
+                            <span style="color: green; font-weight: bold">Hoạt động</span>
+                          </td>
+                          <td>Chậm</td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>SohaCoin</td>
+                          <td style="text-align: center">40%</td>
+                          <td style="text-align: center">40%</td>
+                          <td style="text-align: center">
+                            <span style="color: green; font-weight: bold">Hoạt động</span>
+                          </td>
+                          <td>Chậm</td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>Dzocard</td>
+                          <td style="text-align: center">40%</td>
+                          <td style="text-align: center">40%</td>
+                          <td style="text-align: center">
+                            <span style="color: green; font-weight: bold">Hoạt động</span>
+                          </td>
+                          <td>Chậm</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="end">
+      <div class="container">
+        <div class="row">
+          <div class="info">
+            <h4>Thông tin liên hệ</h4>
+            <ul class="list-addres">
+              <li><i class="fa fa-map"></i> Địa Chỉ: Ninh Khánh - Ninh Bình</li>
+              <li><i class="fa fa-phone-square"></i> Điện thoại: 0383363338</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="fouter">
+          <div class="container">
+            <div class="row bottom1">
+              <div class="col-sm-4">
+                <i class="fa fa-smile-o"></i> Đổi thẻ cào nhanh chóng, Tiện lợi
+              </div>
+              <div class="col-sm-4">
+                <i class="fa fa-usd"></i> Thanh toán an toàn, tiết kiệm
+              </div>
+              <div class="col-sm-4"><i class="fa fa-lock"></i> Bảo mật SSL</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
